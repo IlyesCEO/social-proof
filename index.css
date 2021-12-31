@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+
+  background: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg), url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.top {
+  width: 80%;
+  box-sizing: border-box;
+  position: relative;
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+.h {
+  width: 426px;
+}
+
+.top-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 437px;
+
+  right: 0;
+}
+
+.stars {
+  padding: 1.2rem 0.5rem 0 1rem;
+}
+
+.rating {
+  background: hsl(300, 24%, 96%);
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 2rem 0 0;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.one {
+  transform: translateX(-25%);
+}
+
+.two {
+  transform: translateX(-15%);
+}
+
+.three {
+  transform: translateX(-5%);
+}
+
+.text-top {
+  color: hsl(300, 43%, 22%);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.p1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(303, 10%, 53%);
+}
+
+.box {
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: auto;
+  background: hsl(300, 43%, 22%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.bottom {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.names {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.comment {
+  color: hsl(300, 24%, 96%);
+}
+
+.smith {
+  transform: translateY(-20%);
+}
+
+.roberts {
+  transform: translateY(-10%);
+}
+
+.image-align {
+  display: flex;
+  flex-direction: row;
+
+  box-sizing: border-box;
+}
+
+.image {
+  margin: 1rem 1rem 0 1rem;
+  height: 70px;
+
+  border-radius: 40px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg),
+      url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    background-size: 50%, 50%;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .top {
+    box-sizing: border-box;
+    display: block;
+    transform: translateX(10%);
+  }
+
+  .top-right {
+    flex-direction: column;
+    position: relative;
+    float: none;
+    justify-content: center;
+  }
+
+  .one,
+  .two,
+  .three {
+    transform: none;
+    z-index: 3;
+  }
+
+  .bottom {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .box {
+    width: 60%;
+    height: auto;
+  }
+}
